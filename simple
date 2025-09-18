@@ -1,0 +1,12 @@
+With CTE_Example as
+(
+select gender,AVG(salary) avg_sal,MAX(salary) max_sal,min(salary) min_sal,count(salary) count_sal
+from employee_demographics dem
+join employee_salary sal
+ on dem.employee_id=sal.employee_id
+ group by gender
+ )
+ select *
+ from 
+ CTE_Example
+ ;
