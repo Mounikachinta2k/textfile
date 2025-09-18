@@ -4,5 +4,5 @@ select * from employee_salary;
 
 select *
 from employee_demographics as dem
-inner join employee_salary as sal
+left join employee_salary as sal
   on dem.employee_id=sal.employee_id;
