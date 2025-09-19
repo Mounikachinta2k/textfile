@@ -10,3 +10,4 @@ join employee_salary sal
  from 
  CTE_Example
  ;
+ select 
